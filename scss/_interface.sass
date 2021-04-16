@@ -1,0 +1,53 @@
+html, body
+	height: 100%
+
+body
+    +regular
+    font-size: 16px
+    line-height: 1.5   
+    color: $dark
+    background: #fbfbfb
+.btn-primary
+    background: $main-orange
+    border-color: $main-orange
+    &:hover
+        background: $main-orange
+        border-color: $main-orange
+.container
+    height: inherit
+.wrapper 
+    width: 100%
+    margin: 0 auto
+    min-height: 100%
+    height: auto !important
+    height: 100%
+.middle 
+    width: 100%
+    padding: 0 0 300px
+    display: flex
+    margin-top: 60px
+    &::after 
+        display: table
+        clear: both
+        content: ''
+    &-container
+        display: flex
+
+.mcontainer 
+    width: 100%
+    float: left
+    overflow: hidden
+    margin-bottom: 140px
+.content 
+    padding: 0 0 0 70px
+    &-title
+        margin: 0 8px 12px 0
+        +medium
+        font-size: 24px
+        line-height: 1.5
+        color: $main-orange
+.mt50
+    margin-top: 50px
+    
+    
+    
