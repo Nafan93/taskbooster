@@ -17,14 +17,17 @@
             font-size: 12px
             line-height: 1.5
             color: #999999
-            & span
-                display: block
+        &_copyright
+            display: block
+        &_info, &_logo
+            display: none
+        
     &-content
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
         padding: 68px 0 0 0 
     &-section
-        
         &-title
             margin: 0 39px 20px 0
             +medium
@@ -41,6 +44,10 @@
                 color: #999999
                 text-decoration: none
             &__faces
+                display: grid
+                grid-template-columns: repeat(4, 40px)
+                grid-column-gap: 1px
+                grid-row-gap: 10px
                 width: 200px
                 & img
                     width: 39px
@@ -53,3 +60,44 @@
                     height: 40px
                     margin: 20px 8px 0 0
                     padding: 14px 9px 1
+    &_payments
+        &_content
+            display: flex
+            & img
+                width: 70px
+                height: 40px
+                margin: 20px 8px 0 0
+                padding: 14px 9px 1
+@media screen and (max-width: 991px) 
+    .footer
+        height: 452px
+        &_information
+            &__2
+                display: none
+        &_payments
+            width: 100%
+            
+            &_content
+                justify-content: center
+            
+            &_title
+                display: none
+        &_content
+            align-items: center
+        &-bottom
+            height: 126px
+            &-content
+                flex-direction: column
+            &_logo
+                display: block
+            &_copyright
+                display: none
+            &_info
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin-top: 22px
+                & p
+                    margin: 0
+        

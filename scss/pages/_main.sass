@@ -17,6 +17,7 @@
         width: 515px
     &-item
         display: flex
+        width: 100%
         & img
             width: 100px
             height: 100px
@@ -25,6 +26,9 @@
             border-radius: 15px
             box-shadow: 2px 2px 0 0 #dfdfdf
         &-content
+            width: 100%
+            text-overflow: ellipsis
+            overflow: hidden
             & p
                 line-height: 1.5
             & h2
@@ -33,5 +37,21 @@
                 font-size: 20px
                 line-height: 1.5
                 color: $main-orange
-            
-                
+@media screen and (max-width: 991px) 
+    .main
+        flex-direction: column-reverse
+        & img
+            width: 311px
+        &-content
+            & a
+                display: none
+        &-item
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &-content
+                margin-top: 30px
+@media screen and (max-width: 1200px)
+    .main
+        & img
+            width: 400px

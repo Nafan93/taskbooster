@@ -15,6 +15,10 @@ body
         border-color: $main-orange
 .container
     height: inherit
+.nav
+    &-link
+        &:hover
+            color: $main-orange
 .wrapper 
     width: 100%
     margin: 0 auto
@@ -39,7 +43,10 @@ body
     overflow: hidden
     margin-bottom: 140px
 .content 
+    width: 100%
     padding: 0 0 0 70px
+    margin-bottom: 140px
+    overflow: hidden
     &-title
         margin: 0 8px 12px 0
         +medium
@@ -48,6 +55,12 @@ body
         color: $main-orange
 .mt50
     margin-top: 50px
-    
+@media screen and (max-width: 991px) 
+    .middle
+        margin-top: 40px
+    .content
+        padding: 0
+    .mt50
+        margin-top: 0      
     
     
