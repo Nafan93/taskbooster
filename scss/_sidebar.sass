@@ -72,7 +72,62 @@
             height: 300px
         & span
             margin-top: 18px
+    &-nav
+        display: none
 @media screen and (max-width: 991px) 
     .sidebar
-        display: none
+        margin: 0
+        margin-left: -215px
+        transition: .2s
+        &-wrap
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 306px
+            margin: 0 69px 120px -215px
+            padding: 24px 53px 84px
+            border: solid 1px #f6f6f6
+            border-radius: 10px
+            background: #f6f6f6
+            &-active
+                margin-left: 0
+        &-active
+            margin-left: 0
+            position: absolute
+            top: 0px 
+            left: 0px
+            right: 0px
+            width: 100%
+            z-index: 100
+            background-color: rgba(10, 10, 10, 0.2)
+            overflow-y: scroll
+            transition: .5s
+        &-nav
+            display: block
+            & ul
+                display: flex
+                flex-direction: column
+                padding-left: 0
+                margin-bottom: 0
+                list-style: none
+            &-item
+                padding-top: 15px
+            &-link
+                color: $dark
+                +regular
+                text-decoration: none
+                &:hover
+                    color: rgba(0,0,0,.7)
+                &_active
+                    position: relative
+                    color: $dark
+                    &::after
+                        content: ''
+                        position: absolute
+                        bottom: -5px
+                        left: 0
+                        width: 100%
+                        height: 3px
+                        background: $main-orange
             
