@@ -7,12 +7,23 @@ body
     line-height: 1.5   
     color: $dark
     background: #fbfbfb
-.btn-primary
-    background: $main-orange
-    border-color: $main-orange
-    &:hover
+.btn
+    border-radius: 3px
+    &-primary
         background: $main-orange
         border-color: $main-orange
+        &:hover
+            background: $main-orange
+            border-color: $main-orange
+            color: #fff
+    &-blue
+        background: $main-blue
+        border-color: $main-blue
+        color: #fff
+        &:hover
+            background: $main-blue
+            border-color: $main-blue
+            color: #fff
 .container
     height: inherit
 .nav
@@ -55,13 +66,17 @@ body
         color: $main-orange
 .mt50
     margin-top: 50px
+.form-select
+    +regular
+    font-size: 16px
+    line-height: 1.25
+    color: #757575
+   
 @media screen and (max-width: 991px) 
     .middle
         margin-top: 40px
     .content
         padding: 0
-        
-        margin-bottom: 0
     .mt50
         margin-top: 0      
     

@@ -1,0 +1,40 @@
+.page
+    &-nav
+        position: relative
+        padding: 0 0 16px
+        margin-bottom: 24px
+        & ul
+            display: flex
+            list-style-type: none
+            padding: 0
+            & li
+                +regular
+                padding: 8px
+                &:nth-child(1)
+                    padding-left: 0
+                
+        &:after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 30px
+            width: 100%
+            height: 2px
+            background: #ebecf0
+        &_item
+            position: relative
+            padding: 8px
+            +regular
+            &:nth-child(1)
+                padding-left: 0
+            &__active
+                color: $main-orange
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -2px
+                    width: 100%
+                    height: 2px
+                    background: $main-orange
+                    z-index: 1
