@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Rubik Regular';
-  src: url("/fonts/Rubik-Medium.eot");
+  src: url("/fonts/Rubik-Regular.eot");
   src: url("/fonts/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Rubik-Regular.woff") format("woff"), url("/fonts/Rubik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -20,6 +20,7 @@ html, body {
 
 body {
   font-family: 'Rubik Regular', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #444444;
@@ -90,6 +91,7 @@ body {
 .content-title {
   margin: 0 8px 12px 0;
   font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.5;
   color: #f67555;
@@ -119,7 +121,6 @@ body {
 
 .nav {
   width: 100%;
-  font-family: 'Rubik Medium', sans-serif;
   background: #ffffff;
 }
 
@@ -135,10 +136,9 @@ body {
 }
 
 .nav-link {
-  font-size: 14px;
+  font-family: 'Rubik Medium', sans-serif;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
+  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -298,6 +298,7 @@ body {
   font-size: 9px;
   line-height: 1.78;
   font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
   color: #444444;
 }
 
@@ -320,6 +321,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
 }
 
 .sidebar-prise img {
@@ -360,6 +362,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Rubik Regular', sans-serif;
+  font-weight: 400;
   font-size: 10px;
   color: #444444;
 }
@@ -370,6 +373,7 @@ body {
 
 .sidebar-statistic-item span {
   font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
   color: #f67555;
 }
 
@@ -388,6 +392,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
   color: #f67555;
   font-size: 14px;
   font-weight: 500;
@@ -474,6 +479,7 @@ body {
   .sidebar-nav-link {
     color: #444444;
     font-family: 'Rubik Regular', sans-serif;
+    font-weight: 400;
     text-decoration: none;
   }
   .sidebar-nav-link:hover {
@@ -548,6 +554,7 @@ body {
 .footer-section-title {
   margin: 0 39px 20px 0;
   font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
   font-size: 12px;
   font-weight: 500;
   line-height: 2;
@@ -560,6 +567,7 @@ body {
 
 .footer-section-content a {
   font-family: 'Rubik Regular', sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
   color: #999999;
@@ -694,6 +702,7 @@ body {
 .main-content p {
   margin: 12px 0 28px;
   font-family: 'Rubik Regular', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -732,6 +741,7 @@ body {
 .main-item-content h2 {
   margin: 0 663px 20px 0;
   font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
   color: #f67555;
