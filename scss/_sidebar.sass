@@ -76,9 +76,10 @@
         display: none
 @media screen and (max-width: 991px) 
     .sidebar
+        position: absolute
+        left: -1000px
         margin: 0
-        margin-left: -215px
-        transition: .2s
+        opacity: 0
         &-wrap
             display: flex
             flex-direction: column
@@ -90,11 +91,12 @@
             border: solid 1px #f6f6f6
             border-radius: 10px
             background: #f6f6f6
+            transition: margin .5s
+            opacity: 0
             &-active
                 margin-left: 0
+                opacity: 1
         &-active
-            margin-left: 0
-            position: absolute
             top: 0px 
             left: 0px
             right: 0px
@@ -102,7 +104,7 @@
             z-index: 100
             background-color: rgba(10, 10, 10, 0.2)
             overflow-y: scroll
-            transition: .5s
+            opacity: 1
         &-nav
             display: block
             & ul
@@ -115,7 +117,7 @@
                 padding-top: 15px
             &-link
                 color: $dark
-                +regular
+                +medium
                 text-decoration: none
                 &:hover
                     color: rgba(0,0,0,.7)
