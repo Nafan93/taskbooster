@@ -727,7 +727,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 100%;
 }
 
 .main-content a {
@@ -934,6 +933,8 @@ body {
 }
 
 .order-block_content_total_desc__blue {
+  font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
   color: #50dbe9;
 }
 
