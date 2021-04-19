@@ -64,13 +64,20 @@ body
         font-size: 24px
         line-height: 1.5
         color: $main-orange
+        &__dark
+            color: $dark
+    &-text
+        &-orange
+            +medium
+            color: $main-orange
 .mt50
     margin-top: 50px
-.form-select
-    +regular
-    font-size: 16px
-    line-height: 1.25
-    color: #757575
+.form
+    &-select, &-control
+        +regular
+        font-size: 16px
+        line-height: 1.25
+        color: #757575
    
 @media screen and (max-width: 991px) 
     .middle

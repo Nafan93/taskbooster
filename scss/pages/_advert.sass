@@ -7,8 +7,10 @@
             line-height: 0.8
             text-align: center
             color: $main-orange
+            text-transform: uppercase
         &_content
             &_title
+
                 & span
                     +medium
                     font-size: 12px
@@ -21,14 +23,37 @@
                     +medium
                     font-size: 20px
                     line-height: 1.5
-                & span
+                    margin-bottom: 0
+                &__orange
                     +medium
                     padding-left: 16px
                     font-size: 20px
                     line-height: 1.5
                     color: $main-orange
+                &_desc
+                    +regular
+                    font-size: 16px
+                    line-height: 1.88
+                    &__blue
+                        color: $main-blue
+
             &_submit
                 padding: 14px 83.5px
+        &_warning
+            padding: 16px 16px 22px
+            border-radius: 3px
+            background: rgba(7, 201, 250, 0.1)
+            & p
+                font-size: 14px
+                line-height: 1.43
+            &_icon
+                width: 16.5px
+                height: 16px
+                color: $main-blue
+            &_title
+                +medium
+                font-size: 16px
+                line-height: 1.25
                 
 @media screen and (max-width: 991px) 
     .order

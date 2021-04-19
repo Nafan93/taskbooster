@@ -7,11 +7,14 @@
             display: flex
             list-style-type: none
             padding: 0
-            & li
+            & li, & a
                 +regular
                 padding: 8px
                 &:nth-child(1)
                     padding-left: 0
+            & a
+                text-decoration: none
+                color: $dark
                 
         &:after
             content: ''

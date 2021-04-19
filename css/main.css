@@ -114,11 +114,21 @@ body {
   color: #f67555;
 }
 
+.content-title__dark {
+  color: #444444;
+}
+
+.content-text-orange {
+  font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
+  color: #f67555;
+}
+
 .mt50 {
   margin-top: 50px;
 }
 
-.form-select {
+.form-select, .form-control {
   font-family: 'Rubik Regular', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -782,7 +792,7 @@ body {
   .main img {
     width: 311px;
   }
-  .main-content a {
+  .main-content_join {
     display: none;
   }
   .main-item {
@@ -822,14 +832,19 @@ body {
   padding: 0;
 }
 
-.page-nav ul li {
+.page-nav ul li, .page-nav ul a {
   font-family: 'Rubik Regular', sans-serif;
   font-weight: 400;
   padding: 8px;
 }
 
-.page-nav ul li:nth-child(1) {
+.page-nav ul li:nth-child(1), .page-nav ul a:nth-child(1) {
   padding-left: 0;
+}
+
+.page-nav ul a {
+  text-decoration: none;
+  color: #444444;
 }
 
 .page-nav:after {
@@ -879,6 +894,7 @@ body {
   line-height: 0.8;
   text-align: center;
   color: #f67555;
+  text-transform: uppercase;
 }
 
 .order-block_content_title span {
@@ -898,9 +914,10 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 0;
 }
 
-.order-block_content_total span {
+.order-block_content_total__orange {
   font-family: 'Rubik Medium', sans-serif;
   font-weight: 500;
   padding-left: 16px;
@@ -909,7 +926,42 @@ body {
   color: #f67555;
 }
 
+.order-block_content_total_desc {
+  font-family: 'Rubik Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.order-block_content_total_desc__blue {
+  color: #50dbe9;
+}
+
 .order-block_content_submit {
   padding: 14px 83.5px;
+}
+
+.order-block_warning {
+  padding: 16px 16px 22px;
+  border-radius: 3px;
+  background: rgba(7, 201, 250, 0.1);
+}
+
+.order-block_warning p {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.order-block_warning_icon {
+  width: 16.5px;
+  height: 16px;
+  color: #50dbe9;
+}
+
+.order-block_warning_title {
+  font-family: 'Rubik Medium', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
 }
 /*# sourceMappingURL=main.css.map */
